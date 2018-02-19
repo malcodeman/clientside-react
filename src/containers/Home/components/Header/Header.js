@@ -4,12 +4,22 @@ import styled from "styled-components";
 import background from "./img/bg.png";
 
 const HeaderSection = styled.header`
-  min-height: 100vh;
   background-image: url(${background});
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.8);
+`;
+
+const Overlay = styled.div`
+  background-color: rgba(247, 247, 247, 0.2);
+  @media (min-width: 1200px) {
+    background-color: transparent;
+  }
+`;
+
+const Content = styled.div`
+  min-height: 100vh;
 `;
 
 const Container = styled.div`
@@ -37,12 +47,6 @@ const HeroText = styled.div`
   align-items: center;
   text-align: center;
   padding: 2rem 0;
-  p {
-    line-height: 1.8;
-  }
-  p:last-of-type {
-    margin-bottom: 2rem;
-  }
 `;
 
 const Heading = styled.h1`
@@ -50,6 +54,11 @@ const Heading = styled.h1`
   font-size: 1.4rem;
   letter-spacing: 2px;
   margin-bottom: 1rem;
+`;
+
+const Paragraph = styled.p`
+  margin-bottom: 2rem;
+  line-height: 1.8;
 `;
 
 const Button = styled.button`
@@ -70,22 +79,25 @@ const Button = styled.button`
 const Header = () => {
   return (
     <HeaderSection>
-      <Container>
-        <Nav>
-          <Logo>Shiff</Logo>
-        </Nav>
-      </Container>
-      <Container>
-        <HeroText>
-          <Heading>Members-only shop for influencers</Heading>
-          <p>Connect with top-brands through Shiff.</p>
-          <p>
-            Promote their products on social media and keep them for free in
-            return.
-          </p>
-          <Button>Get started</Button>
-        </HeroText>
-      </Container>
+      <Overlay>
+        <Content>
+          <Container>
+            <Nav>
+              <Logo>Shiff</Logo>
+            </Nav>
+          </Container>
+          <Container>
+            <HeroText>
+              <Heading>Members-only shop for influencers</Heading>
+              <Paragraph>
+                Connect with top-brands through Shiff. Promote their products on
+                social <br /> media and keep them for free in return.
+              </Paragraph>
+              <Button>Get started</Button>
+            </HeroText>
+          </Container>
+        </Content>
+      </Overlay>
     </HeaderSection>
   );
 };
