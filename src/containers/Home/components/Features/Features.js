@@ -15,7 +15,6 @@ const Content = styled.div`
   }
   display: flex;
   flex-direction: column;
-  padding: 2rem 0;
 `;
 
 const Container = styled.div`

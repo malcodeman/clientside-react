@@ -58,6 +58,7 @@ const Heading = styled.h1`
 const Paragraph = styled.p`
   margin-bottom: 2rem;
   line-height: 1.8;
+  max-width: 520px;
 `;
 
 const Button = styled.button`
@@ -93,7 +94,7 @@ const Header = () => {
               <Heading>Members-only shop for influencers</Heading>
               <Paragraph>
                 Connect with top-brands through Shiff. Promote their products on
-                social <br /> media and keep them for free in return.
+                social media and keep them for free in return.
               </Paragraph>
               <Button>Get started</Button>
             </HeroText>

@@ -23,7 +23,7 @@ const Overlay = styled.div`
 const Content = styled.div`
   display: flex;
   align-items: center;
-  padding: 2rem;
+  min-height: 576px;
 `;
 
 const Container = styled.div`
@@ -32,7 +32,9 @@ const Container = styled.div`
   width: 100%;
 `;
 
-const Text = styled.div``;
+const Text = styled.div`
+  padding: 2rem;
+`;
 
 const Heading = styled.h2`
   text-transform: uppercase;
@@ -48,6 +50,7 @@ const Quote = styled.p`
       font-size: 1.2rem;
     }
   }
+  max-width: 380px;
   margin-bottom: 1rem;
 `;
 
@@ -66,9 +69,9 @@ const Testimony = () => {
                 Your access to <br /> high-end products
               </Heading>
               <Quote>
-                “Shiff really gets all of the best products in one place.<br />
-                It gave me an opportunity to get my favourise products <br />
-                for free in exchange for my influence.”
+                “Shiff really gets all of the best products in one place. It
+                gave me an opportunity to get my favourise products for free in
+                exchange for my influence.”
               </Quote>
               <Author>John Doe, United States</Author>
             </Text>

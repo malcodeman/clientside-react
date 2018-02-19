@@ -6,12 +6,12 @@ import Footer from "./components/Footer/Footer";
 
 const Home = () => {
   return (
-    <div>
+    <React.Fragment>
       <Header />
       <Testimony />
       <Features />
       <Footer />
-    </div>
+    </React.Fragment>
   );
 };
 

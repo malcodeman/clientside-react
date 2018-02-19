@@ -29,6 +29,7 @@ const Heading = styled.h1`
 const Paragraph = styled.p`
   margin-bottom: 2rem;
   line-height: 1.8;
+  max-width: 620px;
 `;
 
 const Button = styled.button`
@@ -71,8 +72,10 @@ const LinkBox = styled.div`
   color: #fff;
   display: flex;
   flex-direction: column;
+  align-items: center;
   @media (min-width: 575px) {
     flex-direction: row;
+    align-items: initial;
   }
 `;
 
@@ -88,7 +91,7 @@ const Link = styled.a`
 
 const BlackBackground = styled.div`
   background-color: #000;
-  padding: 0 1rem;
+  padding: 1rem;
 `;
 
 const Footer = () => {
@@ -99,8 +102,7 @@ const Footer = () => {
           <Heading>ready to get started on shiff?</Heading>
           <Paragraph>
             Start by connecting your account. We'll guide you through each step.
-            If your influence <br />
-            meets the quality standards, you'll hear more.
+            If your influence meets the quality standards, you'll hear more.
           </Paragraph>
           <Button>Discover products</Button>
         </HeroText>
