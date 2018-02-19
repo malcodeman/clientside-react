@@ -5,8 +5,12 @@ import background from "./img/bg.png";
 const TestimonySection = styled.section`
   background-image: url(${background});
   background-repeat: no-repeat;
-  background-position: 100% 50%;
-  background-size: contain;
+  background-position: 100%;
+  background-size: 100%;
+  @media (min-width: 768px) {
+    background-size: 50%;
+    background-position: 100% 50%;
+  }
 `;
 
 const Overlay = styled.div`
@@ -17,21 +21,18 @@ const Overlay = styled.div`
 `;
 
 const Content = styled.div`
-  min-height: 100vh;
   display: flex;
   align-items: center;
+  padding: 2rem;
 `;
 
 const Container = styled.div`
   margin: 0 auto;
   max-width: 1200px;
-  padding: 0 2rem;
   width: 100%;
 `;
 
-const Text = styled.div`
-  padding: 2rem 2rem;
-`;
+const Text = styled.div``;
 
 const Heading = styled.h2`
   text-transform: uppercase;
@@ -65,11 +66,9 @@ const Testimony = () => {
                 Your access to <br /> high-end products
               </Heading>
               <Quote>
-                <p>
-                  “Shiff really gets all of the best products in one place.<br />
-                  It gave me an opportunity to get my favourise products <br />
-                  for free in exchange for my influence.”
-                </p>
+                “Shiff really gets all of the best products in one place.<br />
+                It gave me an opportunity to get my favourise products <br />
+                for free in exchange for my influence.”
               </Quote>
               <Author>John Doe, United States</Author>
             </Text>

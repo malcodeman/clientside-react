@@ -8,7 +8,6 @@ const HeaderSection = styled.header`
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-color: rgba(0, 0, 0, 0.8);
 `;
 
 const Overlay = styled.div`
@@ -20,12 +19,13 @@ const Overlay = styled.div`
 
 const Content = styled.div`
   min-height: 100vh;
+  padding: 2rem;  
 `;
 
 const Container = styled.div`
   margin: 0 auto;
   max-width: 1200px;
-  padding: 0 2rem;
+  width: 100%;
 `;
 
 const Nav = styled.nav`
