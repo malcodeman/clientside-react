@@ -19,7 +19,6 @@ const Overlay = styled.div`
 
 const Content = styled.div`
   min-height: 100vh;
-  padding: 2rem;  
 `;
 
 const Container = styled.div`
@@ -46,7 +45,7 @@ const HeroText = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 2rem 0;
+  padding: 2rem;
 `;
 
 const Heading = styled.h1`
@@ -62,7 +61,7 @@ const Paragraph = styled.p`
 `;
 
 const Button = styled.button`
-  width: 256px;
+  width: 100%;
   height: 48px;
   display: flex;
   justify-content: center;
@@ -74,6 +73,9 @@ const Button = styled.button`
   text-transform: uppercase;
   font-size: 1rem;
   cursor: pointer;
+  @media (min-width: 575px) {
+    width: 256px;
+  }
 `;
 
 const Header = () => {
