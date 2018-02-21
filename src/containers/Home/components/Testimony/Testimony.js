@@ -42,6 +42,8 @@ const Heading = styled.h2`
 `;
 
 const Quote = styled.p`
+  max-width: 380px;
+  margin-bottom: 1rem;
   @media (min-width: 576px) {
     border-left: 4px solid blue;
     padding-left: 2rem;
@@ -50,8 +52,6 @@ const Quote = styled.p`
       font-size: 1.2rem;
     }
   }
-  max-width: 380px;
-  margin-bottom: 1rem;
 `;
 
 const Author = styled.span`
