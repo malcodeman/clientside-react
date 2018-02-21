@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 import background from "./img/bg.png";
 
@@ -30,14 +30,34 @@ const Container = styled.div`
 const Nav = styled.nav`
   background-color: transparent;
   height: 128px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  justify-items: center;
   align-items: center;
-  justify-content: center;
 `;
 
 const Logo = styled.span`
+  grid-column-start: 2;
   font-size: 1.8rem;
   text-transform: uppercase;
+`;
+
+const NavBox = styled.div`
+  margin-left: auto;
+`;
+
+const NavBoxText = css`
+  font-size: 1rem;
+  padding: 0 1rem;
+  text-transform: uppercase;
+`;
+
+const Login = styled.span`
+  ${NavBoxText};
+`;
+
+const SignUp = styled.span`
+  ${NavBoxText} color: #1dba53;
 `;
 
 const HeroText = styled.div`
@@ -87,6 +107,10 @@ const Header = () => {
           <Container>
             <Nav>
               <Logo>Shiff</Logo>
+              <NavBox>
+                <Login>Login</Login>
+                <SignUp>Sign up</SignUp>
+              </NavBox>
             </Nav>
           </Container>
           <Container>
