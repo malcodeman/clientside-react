@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const HeaderSection = styled.header`
@@ -13,17 +14,21 @@ const HeaderSection = styled.header`
   left: 0;
   right: 0;
   width: 100%;
+  box-sizing: border-box;
 `;
 
 const Logo = styled.span`
   font-size: 1.8rem;
   text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.8);
 `;
 
 const Header = () => {
   return (
     <HeaderSection>
-      <Logo>Shiff</Logo>
+      <Link to="/">
+        <Logo>Shiff</Logo>
+      </Link>
     </HeaderSection>
   );
 };

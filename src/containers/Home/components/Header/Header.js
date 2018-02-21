@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled, { css } from "styled-components";
 
 import background from "./img/bg.png";
@@ -54,10 +55,12 @@ const NavBoxText = css`
 
 const Login = styled.span`
   ${NavBoxText};
+  color: rgba(0, 0, 0, 0.8);
 `;
 
 const SignUp = styled.span`
-  ${NavBoxText} color: #1dba53;
+  ${NavBoxText};
+  color: #1dba53;
 `;
 
 const HeroText = styled.div`
@@ -108,8 +111,12 @@ const Header = () => {
             <Nav>
               <Logo>Shiff</Logo>
               <NavBox>
-                <Login>Login</Login>
-                <SignUp>Sign up</SignUp>
+                <Link to="/login">
+                  <Login>Login</Login>
+                </Link>
+                <Link to="/login">
+                  <SignUp>Sign up</SignUp>
+                </Link>
               </NavBox>
             </Nav>
           </Container>

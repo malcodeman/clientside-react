@@ -4,6 +4,10 @@ body {
   font-family: sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 p,
 h1,
 h2,
