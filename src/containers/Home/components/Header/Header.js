@@ -33,26 +33,32 @@ const Container = styled.div`
 
 const Nav = styled.nav`
   background-color: transparent;
-  height: 64px;
   display: grid;
   grid-template-columns: 1fr auto 1fr;
+  grid-template-rows: 64px 64px;
+  grid-template-areas: "logo logo logo" ". navBox .";
   justify-items: center;
   align-items: center;
+  @media (min-width: 576px) {
+    grid-template-rows: 32px 32px;
+    grid-template-areas: ". logo navBox" ". logo navBox";
+  }
 `;
 
 const Logo = styled.span`
-  grid-column-start: 2;
+  grid-area: logo;
   font-size: 1.8rem;
   text-transform: uppercase;
 `;
 
 const NavBox = styled.div`
+  grid-area: navBox;
   margin-left: auto;
 `;
 
 const NavBoxText = css`
   font-size: 1rem;
-  padding: 0 1rem;
+  padding: 1rem;
   text-transform: uppercase;
 `;
 
