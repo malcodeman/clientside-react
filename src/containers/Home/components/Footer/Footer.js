@@ -1,5 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { ButtonStyles } from "../../../../styles/button";
 
 const FooterSection = styled.footer`
   background-color: #fff;
@@ -32,22 +34,8 @@ const Paragraph = styled.p`
   max-width: 620px;
 `;
 
-const Button = styled.button`
-  width: 100%;
-  height: 48px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #1dba53;
-  color: #fff;
-  padding: 0;
-  border: 0;
-  text-transform: uppercase;
-  font-size: 1rem;
-  cursor: pointer;
-  @media (min-width: 575px) {
-    width: 256px;
-  }
+const Button = styled(Link)`
+  ${ButtonStyles};
 `;
 
 const Nav = styled.nav`
@@ -64,8 +52,17 @@ const Nav = styled.nav`
 
 const Logo = styled.span`
   font-size: 1.8rem;
-  text-transform: uppercase;
+`;
+
+const StyledLink = styled(Link)`
   color: #fff;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 1rem;
+  cursor: pointer;
+  @media (min-width: 575px) {
+    padding: 0 1rem;
+  }
 `;
 
 const LinkBox = styled.div`
@@ -76,16 +73,6 @@ const LinkBox = styled.div`
   @media (min-width: 575px) {
     flex-direction: row;
     align-items: initial;
-  }
-`;
-
-const Link = styled.a`
-  color: #fff;
-  text-transform: uppercase;
-  padding: 1rem;
-  cursor: pointer;
-  @media (min-width: 575px) {
-    padding: 0 1rem;
   }
 `;
 
@@ -104,19 +91,19 @@ const Footer = () => {
             Start by connecting your account. We'll guide you through each step.
             If your influence meets the quality standards, you'll hear more.
           </Paragraph>
-          <Button>Discover products</Button>
+          <Button to="/signup">Discover products</Button>
         </HeroText>
       </Container>
       <BlackBackground>
         <Container>
           <Nav>
-            <Link>
+            <StyledLink to="/">
               <Logo>Shiff</Logo>
-            </Link>
+            </StyledLink>
             <LinkBox>
-              <Link>Terms</Link>
-              <Link>Privacy</Link>
-              <Link>About</Link>
+              <StyledLink to="/terms">Terms</StyledLink>
+              <StyledLink to="/privacy">Privacy</StyledLink>
+              <StyledLink to="/about">About</StyledLink>
             </LinkBox>
           </Nav>
         </Container>

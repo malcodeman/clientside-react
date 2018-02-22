@@ -1,4 +1,4 @@
-export const color = {
+export const Color = {
     /* Brand */
     primary: "rgba(0, 0, 0, .8)",
     secondary: "rgba(0, 0, 0, .6)",

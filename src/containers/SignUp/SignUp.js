@@ -11,16 +11,16 @@ const MainSection = styled.main`
   grid-template-rows: auto 1fr;
 `;
 
-const Container = styled.div`
-  margin: 0 auto;
-  max-width: 1200px;
-  width: 100%;
-`;
-
 const MainContent = styled.div`
   padding: 2rem;
   display: flex;
   align-items: center;
+`;
+
+const Container = styled.div`
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
 `;
 
 const SocialCardContainer = styled.div`
@@ -42,7 +42,7 @@ const Button = styled.button`
   align-self: flex-end;
 `;
 
-const Connect = () => {
+const SignUp = () => {
   return (
     <MainSection>
       <Header />
@@ -70,4 +70,4 @@ const Connect = () => {
   );
 };
 
-export default Connect;
+export default SignUp;

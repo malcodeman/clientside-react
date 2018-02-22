@@ -1,11 +1,11 @@
 import styled, { css } from "styled-components";
-import { color } from "./constants";
+import { Color } from "./constants";
 
 export const ButtonStyles = css`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: ${color.green};
+  background-color: ${Color.green};
   color: #fff;
   padding: 0;
   border: 0;

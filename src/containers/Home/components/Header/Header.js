@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {color} from "../../../../styles/constants";
+import { Color } from "../../../../styles/constants";
+import { ButtonStyles } from "../../../../styles/button";
+
 import styled, { css } from "styled-components";
 
 import background from "./img/bg.png";
@@ -31,7 +33,7 @@ const Container = styled.div`
 
 const Nav = styled.nav`
   background-color: transparent;
-  height: 128px;
+  height: 64px;
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   justify-items: center;
@@ -54,14 +56,14 @@ const NavBoxText = css`
   text-transform: uppercase;
 `;
 
-const Login = styled.span`
+const Login = styled(Link)`
   ${NavBoxText};
   color: rgba(0, 0, 0, 0.8);
 `;
 
-const SignUp = styled.span`
+const SignUp = styled(Link)`
   ${NavBoxText};
-  color: ${color.green};
+  color: ${Color.green};
 `;
 
 const HeroText = styled.div`
@@ -85,22 +87,8 @@ const Paragraph = styled.p`
   max-width: 520px;
 `;
 
-const Button = styled.button`
-  width: 100%;
-  height: 48px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: ${color.green};
-  color: #fff;
-  padding: 0;
-  border: 0;
-  text-transform: uppercase;
-  font-size: 1rem;
-  cursor: pointer;
-  @media (min-width: 575px) {
-    width: 256px;
-  }
+const Button = styled(Link)`
+  ${ButtonStyles};
 `;
 
 const Header = () => {
@@ -112,12 +100,8 @@ const Header = () => {
             <Nav>
               <Logo>Shiff</Logo>
               <NavBox>
-                <Link to="/login">
-                  <Login>Login</Login>
-                </Link>
-                <Link to="/login">
-                  <SignUp>Sign up</SignUp>
-                </Link>
+                <Login to="/login">Login</Login>
+                <SignUp to="/signup">Sign up</SignUp>
               </NavBox>
             </Nav>
           </Container>
@@ -128,7 +112,7 @@ const Header = () => {
                 Connect with top-brands through Shiff. Promote their products on
                 social media and keep them for free in return.
               </Paragraph>
-              <Button>Get started</Button>
+              <Button to="/signup">Get started</Button>
             </HeroText>
           </Container>
         </Content>
