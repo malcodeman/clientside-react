@@ -15,6 +15,10 @@ const Card = styled.div`
   align-items: center;
   padding: 1rem;
   box-sizing: border-box;
+  transition: box-shadow 0.3s ease-in-out;
+  &:hover {
+    box-shadow: 0 6px rgba(0, 0, 0, 0.1);
+  }
 `;
 
 const LoginIcon = styled.img`
@@ -83,7 +87,9 @@ const SocialCard = props => {
     <Card>
       <LoginIcon src={icon} />
       <LoginText>{props.text}</LoginText>
-      <Button buttonBackground={props.buttonBackground}>{props.buttonText}</Button>
+      <Button buttonBackground={props.buttonBackground}>
+        {props.buttonText}
+      </Button>
     </Card>
   );
 };
