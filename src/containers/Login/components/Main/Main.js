@@ -32,7 +32,7 @@ const RegisterText = styled.p`
 const RegisterLink = styled.a`
   font-size: 1rem;
   color: #1dba53;
-  padding: 0 .4rem;
+  padding: 0 0.4rem;
 `;
 
 const Main = () => {
@@ -44,11 +44,13 @@ const Main = () => {
           icon="facebook"
           buttonBackground="facebook"
           text="Login with Facebook"
+          buttonText="login"
         />
         <SocialCard
           icon="instagram"
           buttonBackground="instagram"
           text="Login with Instagram"
+          buttonText="login"
         />
         <RegisterText>
           Don't have an account?

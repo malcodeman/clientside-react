@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import {color} from "../../../../styles/constants";
 import styled, { css } from "styled-components";
 
 import background from "./img/bg.png";
@@ -60,7 +61,7 @@ const Login = styled.span`
 
 const SignUp = styled.span`
   ${NavBoxText};
-  color: #1dba53;
+  color: ${color.green};
 `;
 
 const HeroText = styled.div`
@@ -90,7 +91,7 @@ const Button = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #1dba53;
+  background-color: ${color.green};
   color: #fff;
   padding: 0;
   border: 0;
