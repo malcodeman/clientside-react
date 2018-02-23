@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import styled from "styled-components";
 import Header from "../../components/Header/Header";
 import SocialCard from "../../components/SocialCard/SocialCard";
@@ -37,7 +39,7 @@ const Heading = styled.h2`
   margin-bottom: 2rem;
 `;
 
-const Button = styled.button`
+const Button = styled(Link)`
   ${ButtonStyles};
   align-self: flex-end;
 `;
@@ -62,7 +64,7 @@ const SignUp = () => {
               text="connect your instagram account"
               buttonText="connect"
             />
-            <Button>Calculate influencer score</Button>
+            <Button to="/welcome">Calculate influencer score</Button>
           </SocialCardContainer>
         </Container>
       </MainContent>

@@ -1,9 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import Header from "../../components/Header/Header";
-import SocialRatings from "./components/SocialRatings/SocialRatings";
 import SocialCard from "../../components/SocialCard/SocialCard";
+import SocialRatings from "./components/SocialRatings/SocialRatings";
 import ProgressScoreCard from "./components/ProgressScoreCard/ProgressScoreCard";
+import ChartCard from "./components/ChartCard/ChartCard";
 
 const MainSection = styled.main`
   background-color: #f2f2f2;
@@ -36,14 +37,6 @@ const Grid = styled.section`
   }
 `;
 
-const Chart = styled.div`
-  grid-row: 4 / span 3;
-  @media (min-width: 768px) {
-    grid-column-start: 2;
-    grid-row: 1 / span 3;
-  }
-`;
-
 const Welcome = () => {
   return (
     <MainSection>
@@ -52,16 +45,14 @@ const Welcome = () => {
         <Container>
           <Grid>
             <SocialRatings score="300" points="230" />
-            <ProgressScoreCard/>
+            <ProgressScoreCard />
             <SocialCard
               icon="instagram"
               text="Connect your instagram account"
               buttonBackground="instagram"
               buttonText="connect"
             />
-            <Chart>
-              <div>4</div>
-            </Chart>
+            <ChartCard />
           </Grid>
         </Container>
       </MainContent>
