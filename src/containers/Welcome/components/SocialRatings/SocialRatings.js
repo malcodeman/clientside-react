@@ -25,6 +25,12 @@ const RatingBox = styled.div`
   justify-content: space-around;
 `;
 
+const Icon = styled.img`
+  height: 32px;
+  width: 32px;
+  margin-right: 1rem;
+`;
+
 const RatingText = styled.span`
   text-transform: uppercase;
   font-size: 0.8rem;
@@ -35,13 +41,7 @@ const RatingNumber = styled.span`
   font-size: 1rem;
 `;
 
-const Icon = styled.img`
-  height: 32px;
-  width: 32px;
-  margin-right: 1rem;
-`;
-
-const SocialCard = props => {
+const SocialRatings = props => {
   return (
     <SocialBox>
       <SocialBoxItem>
@@ -62,4 +62,4 @@ const SocialCard = props => {
   );
 };
 
-export default SocialCard;
+export default SocialRatings;

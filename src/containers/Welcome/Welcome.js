@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import Header from "../../components/Header/Header";
-import SocialCard from "./components/SocialCard/SocialCard";
+import SocialRatings from "./components/SocialRatings/SocialRatings";
+import SocialCard from "../../components/SocialCard/SocialCard";
 
 const MainSection = styled.main`
   background-color: #f2f2f2;
@@ -49,9 +50,14 @@ const Welcome = () => {
       <MainContent>
         <Container>
           <Grid>
-            <SocialCard score="300" points="230" />
+            <SocialRatings score="300" points="230" />
             <div>2</div>
-            <div>3</div>
+            <SocialCard
+              icon="instagram"
+              text="Connect your instagram account"
+              buttonBackground="instagram"
+              buttonText="connect"
+            />
             <Chart>
               <div>4</div>
             </Chart>
