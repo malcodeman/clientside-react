@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Header from "../../components/Header/Header";
 import SocialRatings from "./components/SocialRatings/SocialRatings";
 import SocialCard from "../../components/SocialCard/SocialCard";
+import ProgressScoreCard from "./components/ProgressScoreCard/ProgressScoreCard";
 
 const MainSection = styled.main`
   background-color: #f2f2f2;
@@ -51,7 +52,7 @@ const Welcome = () => {
         <Container>
           <Grid>
             <SocialRatings score="300" points="230" />
-            <div>2</div>
+            <ProgressScoreCard/>
             <SocialCard
               icon="instagram"
               text="Connect your instagram account"
