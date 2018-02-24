@@ -6,18 +6,19 @@ import Brand from "./components/Brand/Brand";
 import Brands from "../../../../json/brands.json";
 import BrandLogo from "./img/gucci.png";
 
-const Container = styled.div`
-  margin: 0 auto;
-  max-width: 1200px;
-  width: 100%;
-`;
-
 const HeaderSection = styled.header`
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
 `;
 
 const NavSection = styled.div`
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+`;
+
+const Container = styled.div`
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
 `;
 
 const Nav = styled.nav`

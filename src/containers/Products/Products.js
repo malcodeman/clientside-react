@@ -1,9 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Header from "./components/Header/Header";
 import Product from "./components/Product/Product";
 import LatestProducts from "../../json/latest.json";
 import ProductImage from "./img/product_1.png";
+import ChevronRightIcon from "./img/chevron-right.svg";
 
 const Container = styled.div`
   margin: 0 auto;
@@ -12,7 +14,6 @@ const Container = styled.div`
 `;
 
 const Main = styled.main`
-
   padding: 4rem 0;
 `;
 
@@ -22,7 +23,7 @@ const Section = styled.section`
 
 const Heading = styled.h1`
   text-transform: uppercase;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 `;
 
 const Grid = styled.div`
@@ -34,8 +35,26 @@ const Grid = styled.div`
 `;
 
 const ProductsSection = styled.div`
-background-color: #f2f2f2;
-`
+  background-color: #f2f2f2;
+`;
+
+const SectionHeader = styled.div`
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+`;
+
+const SeeAll = styled(Link)`
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+`;
+
+const Icon = styled.img`
+  height: 16px;
+  width: 16px;
+  padding-left: 0.4rem;
+`;
 
 class Products extends React.Component {
   state = {
@@ -48,7 +67,12 @@ class Products extends React.Component {
         <Main>
           <Container>
             <Section>
-              <Heading>Latest</Heading>
+              <SectionHeader>
+                <Heading>Latest</Heading>
+                <SeeAll to="/">
+                  See all<Icon src={ChevronRightIcon} />
+                </SeeAll>
+              </SectionHeader>
               <Grid>
                 {this.state.latestProducts.map((product, index) => (
                   <Product
@@ -63,7 +87,12 @@ class Products extends React.Component {
               </Grid>
             </Section>
             <Section>
-              <Heading>Most Viewed</Heading>
+              <SectionHeader>
+                <Heading>Most Viewed</Heading>
+                <SeeAll to="/">
+                  See all<Icon src={ChevronRightIcon} />
+                </SeeAll>
+              </SectionHeader>
               <Grid>
                 {this.state.latestProducts.map((product, index) => (
                   <Product
@@ -78,7 +107,12 @@ class Products extends React.Component {
               </Grid>
             </Section>
             <Section>
-              <Heading>Most Wanted</Heading>
+              <SectionHeader>
+                <Heading>Most Wanted</Heading>
+                <SeeAll to="/">
+                  See all<Icon src={ChevronRightIcon} />
+                </SeeAll>
+              </SectionHeader>
               <Grid>
                 {this.state.latestProducts.map((product, index) => (
                   <Product
