@@ -39,7 +39,6 @@ const RegisterText = styled.p`
 const RegisterLink = styled.a`
   font-size: 1rem;
   color: #1dba53;
-  padding: 0 0.4rem;
 `;
 
 const Login = () => {
