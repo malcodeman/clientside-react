@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1",
+    "days_left": "2",
+    "name": "bell & ross br01-92 watch",
+    "price": "928"
+  },
+  {
+    "id": "2",
+    "days_left": "3",
+    "name": "bossa moonrak speakers system",
+    "price": "2399"
+  },
+  {
+    "id": "3",
+    "days_left": "6",
+    "name": "louis vuitton x supreme backpack",
+    "price": "686"
+  },
+  {
+    "id": "4",
+    "days_left": "9",
+    "name": "montblanc smartwatch",
+    "price": "1932"
+  },
+  {
+    "id": "5",
+    "days_left": "2",
+    "name": "ancheson leather bag",
+    "price": "828"
+  }
+]

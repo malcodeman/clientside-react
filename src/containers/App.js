@@ -4,6 +4,7 @@ import Home from "./Home/Home";
 import Login from "./Login/Login";
 import SignUp from "./SignUp/SignUp";
 import Welcome from "./Welcome/Welcome";
+import Products from "./Products/Products";
 
 class App extends Component {
   render() {
@@ -13,6 +14,7 @@ class App extends Component {
         <Route path="/login" component={Login} />
         <Route path="/signup" component={SignUp} />
         <Route path="/welcome" component={Welcome} />
+        <Route path="/products" component={Products} />
       </Switch>
     );
   }

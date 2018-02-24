@@ -1,10 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Header from "../../components/Header/Header";
 import SocialCard from "../../components/SocialCard/SocialCard";
 import SocialRatings from "./components/SocialRatings/SocialRatings";
 import ProgressScoreCard from "./components/ProgressScoreCard/ProgressScoreCard";
 import ChartCard from "./components/ChartCard/ChartCard";
+import { ButtonStyles } from "../../styles/button";
 
 const MainSection = styled.main`
   background-color: #f2f2f2;
@@ -35,6 +37,12 @@ const Grid = styled.section`
     grid-template-rows: repeat(3, 128px);
     grid-template-columns: 1fr 1fr;
   }
+  margin-bottom: 1rem;
+`;
+
+const Button = styled(Link)`
+  ${ButtonStyles};
+  max-width: 256px;
 `;
 
 const Welcome = () => {
@@ -54,6 +62,7 @@ const Welcome = () => {
             />
             <ChartCard />
           </Grid>
+          <Button to="/products">Continue to shop</Button>
         </Container>
       </MainContent>
     </MainSection>
