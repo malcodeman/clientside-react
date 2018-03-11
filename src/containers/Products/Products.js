@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { connect } from "react-redux";
+
+import { requestBrands } from "../../actions";
 import Header from "./components/Header/Header";
 import Product from "./components/Product/Product";
 import LatestProducts from "../../json/latest.json";
@@ -59,6 +62,10 @@ const Icon = styled.img`
 class Products extends React.Component {
   state = {
     latestProducts: LatestProducts
+    
+  };
+  componentDidMount = () => {
+    this.props.requestBrands();
   };
   render() {
     return (
@@ -133,4 +140,16 @@ class Products extends React.Component {
   }
 }
 
-export default Products;
+const mapStateToProps = state => {
+  return {
+    brands: state.brands.brands
+  };
+};
+
+const mapDispatchToProps = dispatch => {
+  return {
+    requestBrands: () => dispatch(requestBrands())
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Products);
