@@ -84,14 +84,10 @@ class Header extends React.Component {
           <Container>
             <Nav>
               <Search placeholder="Search Shiff" />
-              <Logo to="/">Shiff</Logo>
+              <Logo to="/products">Shiff</Logo>
               <UserBox>
-                <Notifications to="/">
-                  <UserBoxIcon src={BellIcon} />
-                </Notifications>
-                <UserProfile to="/profile">
-                  <UserBoxIcon src={UserIcon} />
-                </UserProfile>
+                <Link to="/profile">Profile</Link>
+                <Link to="/settings">Settings</Link>
               </UserBox>
             </Nav>
           </Container>
