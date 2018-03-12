@@ -1,11 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import styled, { css } from "styled-components";
 import { Color } from "../../../../styles/constants";
 import { ButtonStyles } from "../../../../styles/button";
 
-import styled, { css } from "styled-components";
-
-import background from "./img/bg.png";
+import background from "../../../../img/bg.png";
 
 const HeaderSection = styled.header`
   background-image: url(${background});

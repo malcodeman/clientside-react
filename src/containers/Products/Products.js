@@ -9,6 +9,7 @@ import Product from "./components/Product/Product";
 import LatestProducts from "../../json/latest.json";
 import ProductImage from "./img/product_1.png";
 import ChevronRightIcon from "./img/chevron-right.svg";
+import BrandsFilter from "../../components/BrandsFilter";
 
 const Container = styled.div`
   margin: 0 auto;
@@ -71,6 +72,7 @@ class Products extends React.Component {
     return (
       <ProductsSection>
         <Header />
+        <BrandsFilter/>
         <Main>
           <Container>
             <Section>
