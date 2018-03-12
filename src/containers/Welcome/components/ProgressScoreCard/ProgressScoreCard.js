@@ -47,6 +47,10 @@ const ScoreText = styled.span`
 const Icon = styled.img`
   height: 16px;
   width: 16px;
+  display: none;
+  @media (min-width: 576px) {
+    display: block;
+  }
 `;
 
 const Header = styled.header`
