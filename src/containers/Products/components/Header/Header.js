@@ -112,7 +112,7 @@ class Header extends React.Component {
                 <Notifications to="/">
                   <UserBoxIcon src={BellIcon} />
                 </Notifications>
-                <UserProfile to="/">
+                <UserProfile to="/profile">
                   <UserBoxIcon src={UserIcon} />
                 </UserProfile>
               </UserBox>

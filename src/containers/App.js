@@ -5,6 +5,7 @@ import Login from "./Login/Login";
 import SignUp from "./SignUp/SignUp";
 import Welcome from "./Welcome/Welcome";
 import Products from "./Products/Products";
+import Profile from "./Profile";
 
 class App extends Component {
   render() {
@@ -15,6 +16,7 @@ class App extends Component {
         <Route path="/signup" component={SignUp} />
         <Route path="/welcome" component={Welcome} />
         <Route path="/products" component={Products} />
+        <Route path="/profile" component={Profile} />
       </Switch>
     );
   }
