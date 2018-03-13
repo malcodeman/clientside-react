@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import Header from "../Products/components/Header/Header";
-import SocialRatings from "../Welcome/components/SocialRatings/SocialRatings";
-import ProgressScoreCard from "../Welcome/components/ProgressScoreCard/ProgressScoreCard";
-import ChartCard from "../Welcome/components/ChartCard/ChartCard";
-import SocialCard from "../../components/SocialCard/SocialCard";
+import SocialRatings from "../../components/SocialRatings";
+import ProgressScoreCard from "../../components/ProgressScoreCard";
+import ChartCard from "../../components/ChartCard";
+import SocialCard from "../../components/SocialCard";
 
 import { CardStyles } from "../../styles/card";
 

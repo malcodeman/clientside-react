@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { CardStyles } from "../../../../styles/card";
+import { CardStyles } from "../../styles/card";
 import AwardIcon from "./img/award.svg";
 import StarIcon from "./img/star.svg";
 

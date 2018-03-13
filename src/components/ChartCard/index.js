@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Color } from "../../../../styles/constants";
+import { Color } from "../../styles/constants";
 
 const ChartBox = styled.div`
   grid-row: 4 / span 3;

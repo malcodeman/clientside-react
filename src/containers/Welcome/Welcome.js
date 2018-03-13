@@ -2,10 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Header from "../../components/Header/Header";
-import SocialCard from "../../components/SocialCard/SocialCard";
-import SocialRatings from "./components/SocialRatings/SocialRatings";
-import ProgressScoreCard from "./components/ProgressScoreCard/ProgressScoreCard";
-import ChartCard from "./components/ChartCard/ChartCard";
+import SocialCard from "../../components/SocialCard";
+import SocialRatings from "../../components/SocialRatings";
+import ProgressScoreCard from "../../components/ProgressScoreCard";
+import ChartCard from "../../components/ChartCard";
 import { ButtonStyles } from "../../styles/button";
 
 const MainSection = styled.main`

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { CardStyles } from "../../../../styles/card";
-import { Color } from "../../../../styles/constants";
+import { CardStyles } from "../../styles/card";
+import { Color } from "../../styles/constants";
 import CheckCircleIcon from "./img/check-circle.svg";
 
 const ProgressBox = styled.div`

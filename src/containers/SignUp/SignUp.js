@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import styled from "styled-components";
 import Header from "../../components/Header/Header";
-import SocialCard from "../../components/SocialCard/SocialCard";
+import SocialCard from "../../components/SocialCard";
 import { ButtonStyles } from "../../styles/button";
 
 const MainSection = styled.main`

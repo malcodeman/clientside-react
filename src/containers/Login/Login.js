@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Header from "../../components/Header/Header";
-import SocialCard from "../../components/SocialCard/SocialCard";
+import SocialCard from "../../components/SocialCard";
 
 const MainSection = styled.main`
   background-color: #f2f2f2;
